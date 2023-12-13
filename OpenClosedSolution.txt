@@ -1,0 +1,27 @@
+abstract class Vehicle {
+  private int fuelCapacity;
+  private int fuelEFfficiency;
+  public Vehicle(int fuelCapacity,int fuelEfficiency){
+    this.fuelCapacity=fuelCapacity;
+    this.fuelEfficiency= fuelEfficiency;
+  }
+  // getters and setters here...
+
+  // abstract function definition.
+  abstract public int getRange();
+}
+
+class TraditionalVehicle extends Vehicle{
+  // defines its own getRange() implementation
+}
+
+class HybridVehicle extends Vehicle {
+   // defines its own getRange() implementation
+}
+
+class OpenClosedSolution{
+ public static void main(String[] args){
+ HybridVehicle hv = new HybridVehicle(10, 20, 10);
+ TraditionalVehicle tv=new TraditionalVehicle(20, 10);
+}
+}
